@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 import '../controllers/count_controller.dart';
 
-class SimpleHomePage extends GetWidget<CountController> {
+class SimpleHomePage extends GetView<CountController> {
   @override
   Widget build(BuildContext context) {
     Get.create(() => CountController());
