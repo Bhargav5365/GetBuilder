@@ -15,9 +15,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'init Controller',
-      home: SimpleHomePage(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'init Controller',
+        getPages: [
+          GetPage(name: '/', page: () => SimpleHomePage()),
+        ]);
   }
 }
